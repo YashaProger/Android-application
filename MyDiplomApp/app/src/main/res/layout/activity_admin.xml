@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="656dp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <FrameLayout
+                android:layout_width="271dp"
+                android:layout_height="518dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center">
+
+                <Spinner
+                    android:id="@+id/spFloor"
+                    android:layout_width="104dp"
+                    android:layout_height="41dp"
+                    android:background="@drawable/admin_spiner_floor"/>
+
+                <FrameLayout
+                    android:layout_width="236dp"
+                    android:layout_height="409dp"
+                    android:layout_gravity="bottom|right">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_1"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="401"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_3"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="403"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_5"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="405"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_7"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="407"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_9"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="409"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_11"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="411"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_13"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="413"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_2"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="402"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_4"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="404"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_6"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="406"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_8"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="408"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_10"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="410"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_12"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:text="412"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp"
+                            android:onClick="onClickInfoRoom"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_room_14"
+                            android:layout_width="66dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/admin_button_room"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:lineSpacingExtra="29dp"
+                            android:onClick="onClickInfoRoom"
+                            android:text="414"
+                            android:textAllCaps="false"
+                            android:textColor="#826AED"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/info_room"
+                android:layout_width="321dp"
+                android:layout_height="225dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="right"
+                    android:onClick="onClickInfoRoomExit"
+                    android:elevation="1dp"
+                    android:background="@drawable/admin_info_room_button_exit">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="false"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/admin_info_room_button_exit_x" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="304dp"
+                    android:layout_height="208dp"
+                    android:layout_gravity="bottom|left"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="25dp"
+                    android:paddingRight="35dp"
+                    android:background="@drawable/admin_info_room">
+
+                    <TextView
+                        android:id="@+id/block"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="44dp"
+                        android:layout_gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="3-шка"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/room_3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/room_3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/room_3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="44dp"
+                        android:layout_gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="2-шка"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/room_2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/room_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <FrameLayout
+                android:layout_width="311dp"
+                android:layout_height="132dp"
+                android:visibility="visible"
+                android:layout_marginTop="120dp"
+                android:layout_gravity="center_horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Количество свободных мест:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/free_place_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="78dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Мужской блок: Загрузка..."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/free_place_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Женский блок: Загрузка..."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="311dp"
+                android:layout_height="132dp"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Заявок подано \nна проживание:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/application_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="78dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Мужской блок: Загрузка..."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/application_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Женский блок: Загрузка..."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button9"
+                android:layout_width="349dp"
+                android:layout_height="62dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="180dp"
+                android:background="@drawable/user_button_person_application_exit"
+                android:fontFamily="@font/montserrat_bold"
+                android:onClick="onClickApplication"
+                android:text="Рассмотреть заявки"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_height="306dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:elevation="3dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/user_vector_person_group_application" />
+
+                <FrameLayout
+                    android:layout_width="192dp"
+                    android:layout_height="192dp"
+                    android:layout_marginTop="108dp"
+                    android:layout_marginLeft="37dp"
+                    android:elevation="4dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="false"
+                        android:elevation="3dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/user_foto_icon" />
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="365dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/emailUserAccpected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Админимстратор общежития"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="29dp"
+                    app:srcCompat="@drawable/user_person_group_application_band"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="52dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Соблюдение порядка в общежитии"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:layout_marginBottom="107dp"
+                android:layout_gravity="bottom">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="380dp"
+                    android:layout_height="62dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/user_button_person_application_exit"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:lineSpacingExtra="29dp"
+                    android:onClick="onClickListUser"
+                    android:text="Список проживающих"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button10"
+                    android:layout_width="260dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="61dp"
+                    android:background="@drawable/user_button_person_application_exit"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:lineSpacingExtra="29dp"
+                    android:onClick="onClickBackEnter"
+                    android:text="Выйти из аккаунта"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/button_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#826AED"
+            android:layout_gravity="bottom"
+            android:paddingTop="18dp"
+            app:itemIconTint="@drawable/user_button_item_color"
+            app:menu="@drawable/user_menu_button_navigation"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="656dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

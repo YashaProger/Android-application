@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".InfoBranchActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp">
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="189dp"
+              android:scaleType="centerCrop"
+              app:srcCompat="@drawable/user_info_vector"
+              android:layout_centerInParent="false" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="20dp"
+              android:elevation="2dp"
+              android:fontFamily="@font/montserrat_black"
+              android:text="О ФИЛИАЛЕ"
+              android:textColor="#826AED"
+              android:textSize="36dp"
+              app:lineHeight="44dp" />
+
+          <ImageButton
+              android:layout_width="45dp"
+              android:layout_height="45dp"
+              android:layout_gravity="right"
+              android:layout_marginTop="30dp"
+              android:layout_marginEnd="20dp"
+              android:onClick="onClickBack"
+              android:elevation="2dp"
+              android:background="@drawable/application_button_home"
+              android:src="@drawable/application_home_icon" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="134dp"
+            android:layout_marginLeft="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/user_info_branch_metro_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="М"
+                    android:textColor="#CAFF8A"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="49dp"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Бульвар Рокоссовского"
+                    android:textColor="#CAFF8A"
+                    android:textSize="14sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:elevation="2dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Погонный проезд, д. 5, с. 1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/frameLayoutAbove"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="257dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="262dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/user_info_brunch_foto_1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAlignment="center"
+                        android:text="Престижный вид"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAlignment="center"
+                        android:text="Общежитие на Бульваре Рокоссовского выглядит, как полноценный престижный\nхостел и внутри и снаружи"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="262dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/user_info_brunch_foto_2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAlignment="center"
+                        android:text="Комната отдыха"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAlignment="center"
+                        android:text="Здесь вы сможете поиграть на рояле и гитаре, на стеллажах есть множество настольных игр, а ещё есть настольный теннис"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="262dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/user_info_brunch_foto_3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAlignment="center"
+                        android:text="Уютно, как дома"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAlignment="center"
+                        android:text="Мы заботимся о студентах и их комфорте, поэтому создали максимально уютные условия для проживания"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frameLayoutCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="ПРЕИМУЩЕТСТВА\nНАШЕГО ОБЩЕЖИТИЯ"
+                android:textAlignment="center"
+                android:textColor="#826AED"
+                android:textSize="24sp"
+                android:layout_below="@id/frameLayoutAbove"/>
+
+            <LinearLayout
+                android:layout_width="344dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/user_info_brunch_vector_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Оборудованные кухни"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        app:srcCompat="@drawable/user_info_brunch_vector_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Бесплатный Wi-Fi"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/user_info_brunch_vector_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Спортивный комплекс"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        app:srcCompat="@drawable/user_info_brunch_vector_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Настольный теннис"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/user_info_brunch_vector_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Размещение от 2 до 8\nчеловек"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        app:srcCompat="@drawable/user_info_brunch_vector_6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Уборка комнат и\nпрачечная"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/user_info_brunch_vector_7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Круглосуточная охрана"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        app:srcCompat="@drawable/user_info_brunch_vector_8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Камеры наблюдения"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/user_info_brunch_border_frame">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/user_info_brunch_vector_9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Регистрация\nиностранных студентов"
+                        android:textColor="#826AED"
+                        android:textSize="20dp"
+                        android:layout_below="@id/frameLayoutAbove"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="411dp"
+        android:layout_height="216dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="false"
+            app:srcCompat="@drawable/registration_vector_group1" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="304dp"
+            android:layout_height="309dp"
+            android:layout_gravity="center">
+            <EditText
+                android:id="@+id/emailRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:background="@drawable/enter_edittext_background"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Почта"
+                android:inputType="textEmailAddress"
+                android:lineHeight="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#826AED"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/passwordRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/enter_edittext_background"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:lineHeight="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#826AED"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/passwordRegistrationRepit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/enter_edittext_background"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Повторите пароль"
+                android:inputType="textPassword"
+                android:lineHeight="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#826AED"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="304dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="250dp"
+                android:background="@drawable/enter_button_in"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="29dp"
+                android:onClick="onClickRegistration"
+                android:text="РЕГИСТРАЦИЯ"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="411dp"
+            android:layout_height="216dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="513dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="false"
+                app:srcCompat="@drawable/registration_vector_group2" />
+        </FrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationUserActivity">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageButton
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="21dp"
+            android:onClick="onClickExit"
+            android:background="@drawable/admin_application_button_home"
+            android:src="@drawable/admin_application_button_home_vector" />
+
+        <FrameLayout
+            android:layout_width="316dp"
+            android:layout_height="621dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Фамилия"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/text_application_lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/admin_application_text_bacground"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Имя"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/text_application_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/admin_application_text_bacground"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Отчество"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/text_application_sureName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/admin_application_text_bacground"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Дата рождения"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/text_application_bithday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/admin_application_text_bacground"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|top"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Пол"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/text_application_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/admin_application_text_bacground"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/imageViewApplicationUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="171dp"
+                    android:layout_marginTop="10dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_yes"
+                        android:layout_width="145dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/admin_application_user_button_yes"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:onClick="onClickYes"
+                        android:text="принять"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_no"
+                        android:layout_width="145dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/admin_application_user_button_no"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:onClick="onClickNo"
+                        android:text="отклонить"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

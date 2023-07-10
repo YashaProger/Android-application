@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListUsers">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:onClick="onClickBack"
+            android:background="@drawable/list_user_button_back"
+            app:srcCompat="@drawable/user_icon_home">
+
+        </ImageButton>
+
+        <FrameLayout
+            android:layout_width="322dp"
+            android:layout_height="528dp"
+            android:layout_gravity="center"
+            android:background="@drawable/admin_application_border">
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                tools:listitem="@layout/list_item_users">
+
+            </ListView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/kickUser"
+            android:layout_width="240dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="169dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/admin_info_room"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:text="Вы точно хотите выселить?"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/user_info_kick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="63dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/admin_user_list_button_yes"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:onClick="onClickYes"
+                        android:text="Да"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="107dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/admin_user_list_button_no"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:onClick="onClickNo"
+                        android:text="Отмена"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

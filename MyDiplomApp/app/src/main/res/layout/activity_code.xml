@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAFF8A"
+    android:elevation="1dp"
+    tools:context=".CodeActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="false"
+        android:elevation="3dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/code_vector_group" />
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="730dp"
+        android:elevation="3dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <FrameLayout
+            android:layout_width="368dp"
+            android:layout_height="391dp"
+            android:layout_gravity="center"
+            android:elevation="3dp"
+            android:background="@drawable/code_layout_main">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="250dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="42dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Подтвердите email"
+                android:textColor="#826AED"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="302dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="101dp"
+                android:fontFamily="@font/montserrat"
+                android:text="На указанную вами почту была выслана ссылка для подтвеждения регистрации. \n \nПройдите по ссылке в \nписьме"
+                android:textColor="#826AED"
+                android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="186dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="287dp"
+                android:background="@drawable/enter_button_in"
+                android:fontFamily="@font/montserrat_bold"
+                android:onClick="onClickSend"
+                android:text="ГОТОВО"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+        </FrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

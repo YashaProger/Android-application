@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationConsiderActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spFloor"
+            android:layout_width="71dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/admin_spiner_floor"/>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/list_user_button_back"
+            android:onClick="onClickBackAdmin"
+            app:srcCompat="@drawable/user_icon_home">
+
+        </ImageButton>
+
+        <FrameLayout
+            android:layout_width="322dp"
+            android:layout_height="528dp"
+            android:layout_gravity="center"
+            android:background="@drawable/admin_application_border">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

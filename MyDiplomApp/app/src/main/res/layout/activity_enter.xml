@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <FrameLayout
+            android:layout_width="411dp"
+            android:layout_height="348dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="false"
+                app:srcCompat="@drawable/enter_vector_group" />
+        </FrameLayout>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="304dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="355dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/enter_edittext_background"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Почта"
+            android:inputType="textEmailAddress"
+            android:lineHeight="20sp"
+            android:paddingLeft="20dp"
+            android:textColorHint="#826AED"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="304dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="435dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/enter_edittext_background"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:lineHeight="20sp"
+            android:paddingLeft="20dp"
+            android:textColorHint="#826AED"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/password_rip"
+            android:layout_width="304dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="499dp"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/montserrat_medium"
+            android:lineHeight="20sp"
+            android:text="Забыли пароль?"
+            android:textColor="#826AED"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="304dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="549dp"
+            android:background="@drawable/enter_button_in"
+            android:fontFamily="@font/montserrat_bold"
+            android:lineSpacingExtra="29dp"
+            android:onClick="onClickEnter"
+            android:text="ВОЙТИ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/reg_not"
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="628dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Еще не зарегестрированы?"
+            android:textAlignment="center"
+            android:textColor="#826AED"
+            android:textSize="16dp"
+            app:lineHeight="19.5dp" />
+
+        <TextView
+            android:id="@+id/reg_in"
+            android:layout_width="145dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="648dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:onClick="onClickRegistration"
+            android:text="Создать аккаунт"
+            android:textAlignment="center"
+            android:textColor="#826AED"
+            android:textSize="16dp"
+            app:lineHeight="19.5dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

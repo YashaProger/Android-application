@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "832643881683",
+    "project_id": "diplomapp-9d52a",
+    "storage_bucket": "diplomapp-9d52a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832643881683:android:209203af049354f0ab9226",
+        "android_client_info": {
+          "package_name": "com.hfad.diplomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832643881683-6684kr62eigpvp0km0i4tgvgbfa20dv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKUtGjBVEv0gYSc0YiLtOJC3hjg-kmix4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832643881683-6684kr62eigpvp0km0i4tgvgbfa20dv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832643881683:android:16b7eab76499564aab9226",
+        "android_client_info": {
+          "package_name": "com.hfad.mydiplomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832643881683-6684kr62eigpvp0km0i4tgvgbfa20dv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKUtGjBVEv0gYSc0YiLtOJC3hjg-kmix4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832643881683-6684kr62eigpvp0km0i4tgvgbfa20dv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

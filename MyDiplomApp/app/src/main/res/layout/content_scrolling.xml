@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ApplicationActivity"
+    tools:showIn="@layout/activity_application">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#826AED">
+
+        <FrameLayout
+            android:layout_width="369dp"
+            android:layout_height="852dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/application_frame_bacground">
+            <FrameLayout
+                android:layout_width="316dp"
+                android:layout_height="396dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/application_frame_bacground">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Фамиля *"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/application_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/application_edittext_bacground"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineHeight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="83dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Имя *"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/application_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="108dp"
+                    android:background="@drawable/application_edittext_bacground"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineHeight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="166dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Отчество *"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/application_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="191dp"
+                    android:background="@drawable/application_edittext_bacground"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineHeight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="249dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Дата рождения *"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/application_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="274dp"
+                    android:background="@drawable/application_edittext_bacground"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:lineHeight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="332dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Пол *"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_gravity="bottom">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonMen"
+                        android:layout_width="147dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/application_button_gender_true"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:lineSpacingExtra="29dp"
+                        android:textAllCaps="false"
+                        android:onClick="onClickMen"
+                        android:text="Мужской"
+                        android:textColor="#858585"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonWomen"
+                        android:layout_width="147dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:background="@drawable/application_button_gender_true"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:lineSpacingExtra="29dp"
+                        android:textAllCaps="false"
+                        android:onClick="onClickWomen"
+                        android:text="Женский"
+                        android:textColor="#858585"
+                        android:textSize="16dp" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutPhoto"
+                android:layout_width="316dp"
+                android:layout_height="207dp"
+                android:layout_marginTop="496dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/application_imageview_border">
+
+                <ImageView
+                    android:id="@+id/imageViewDocument"
+                    android:layout_width="246dp"
+                    android:layout_height="137dp"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPhoto"
+                    android:layout_width="316dp"
+                    android:layout_height="207dp"
+                    android:onClick="onClickPhoto"
+                    android:background="@drawable/application_button_bacground_foto"
+                    app:srcCompat="@drawable/application_button_border_foto"/>
+
+                <TextView
+                    android:id="@+id/imageTextPhoto"
+                    android:layout_width="228dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#888888"
+                    android:onClick="onClickPhoto"
+                    android:textSize="16dp"
+                    android:text="Прикрепите фотографию \n\nстуденческого билета или \n\nсправки с места учёбы" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="305dp"
+                android:layout_height="59dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="34dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/enter_button_in"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="29dp"
+                android:onClick="onClickSendApplication"
+                android:text="Отправить"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>
